@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="JUDIAN_READ_VipReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8E0-zZ-zmP">
+                    <rect key="frame" x="15" y="50" width="150" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="wVZ-gn-pVZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="设置我的支付方式">
+                        <color key="titleColor" red="0.90980392160000001" green="0.1137254902" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="leadAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="3bh-Pa-Q3m"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AI6-nH-0hY">
+                    <rect key="frame" x="457" y="50" width="38" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="trailAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="C4L-pO-l8i"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sH3-93-dep">
+                    <rect key="frame" x="411" y="56.5" width="31" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="AI6-nH-0hY" firstAttribute="leading" secondItem="sH3-93-dep" secondAttribute="trailing" constant="15" id="7ls-C1-i6N"/>
+                <constraint firstItem="8E0-zZ-zmP" firstAttribute="centerY" secondItem="9Gg-ye-v9C" secondAttribute="centerY" id="F1R-A6-Do7"/>
+                <constraint firstItem="sH3-93-dep" firstAttribute="centerY" secondItem="8E0-zZ-zmP" secondAttribute="centerY" id="Ozk-pa-7LE"/>
+                <constraint firstItem="8E0-zZ-zmP" firstAttribute="leading" secondItem="9Gg-ye-v9C" secondAttribute="leading" constant="15" id="WHU-Au-o9a"/>
+                <constraint firstItem="9Gg-ye-v9C" firstAttribute="trailing" secondItem="AI6-nH-0hY" secondAttribute="trailing" constant="15" id="h6F-Mi-aMF"/>
+                <constraint firstItem="AI6-nH-0hY" firstAttribute="centerY" secondItem="8E0-zZ-zmP" secondAttribute="centerY" id="ySS-vu-Xeg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Gg-ye-v9C"/>
+            <connections>
+                <outlet property="centerLab" destination="sH3-93-dep" id="ASK-hC-p0T"/>
+                <outlet property="leadbtn" destination="8E0-zZ-zmP" id="VQ1-bH-gnf"/>
+                <outlet property="trailBtn" destination="AI6-nH-0hY" id="G3r-8t-VSA"/>
+            </connections>
+            <point key="canvasLocation" x="96" y="135.38230884557723"/>
+        </collectionReusableView>
+    </objects>
+</document>

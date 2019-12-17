@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="JUDIAN_READ_NoResultCell">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="240"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="240"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="找到0本，含“ ”的图书" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ub-zv-iJO">
+                        <rect key="frame" x="15" y="22" width="344" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您可以点击求书，书友们会尽力为您寻找图书" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dy9-lQ-dXr">
+                        <rect key="frame" x="15" y="49.5" width="344" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.3921568627" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wc-ls-ocf">
+                        <rect key="frame" x="135.5" y="89.5" width="103" height="103"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="103" id="TtY-0j-dNf"/>
+                            <constraint firstAttribute="width" constant="103" id="lCi-0t-tqc"/>
+                        </constraints>
+                        <state key="normal" image="search_book_btn"/>
+                        <connections>
+                            <action selector="loadBookAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="dX0-Aq-rKD"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4Ub-zv-iJO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="22" id="0to-Bc-556"/>
+                <constraint firstItem="Dy9-lQ-dXr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="6xm-0t-xiz"/>
+                <constraint firstItem="5wc-ls-ocf" firstAttribute="centerX" secondItem="SEy-5g-ep8" secondAttribute="centerX" id="CrT-gD-rh1"/>
+                <constraint firstAttribute="trailing" secondItem="Dy9-lQ-dXr" secondAttribute="trailing" constant="15" id="WLf-2W-nBC"/>
+                <constraint firstItem="Dy9-lQ-dXr" firstAttribute="top" secondItem="4Ub-zv-iJO" secondAttribute="bottom" constant="8" id="Zdb-DP-lDc"/>
+                <constraint firstAttribute="trailing" secondItem="4Ub-zv-iJO" secondAttribute="trailing" constant="15" id="lWk-98-siH"/>
+                <constraint firstItem="5wc-ls-ocf" firstAttribute="top" secondItem="Dy9-lQ-dXr" secondAttribute="bottom" constant="25" id="plu-Xd-2n9"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="5wc-ls-ocf" secondAttribute="bottom" constant="15" id="rFw-T7-ktc"/>
+                <constraint firstItem="4Ub-zv-iJO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="zZm-kF-n9h"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="374" height="240"/>
+            <connections>
+                <outlet property="topLab" destination="4Ub-zv-iJO" id="U0N-ea-5s7"/>
+            </connections>
+            <point key="canvasLocation" x="14.4" y="131.33433283358323"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="search_book_btn" width="103" height="103"/>
+    </resources>
+</document>

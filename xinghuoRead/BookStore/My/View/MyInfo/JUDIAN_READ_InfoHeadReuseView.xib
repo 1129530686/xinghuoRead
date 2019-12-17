@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="JUDIAN_READ_InfoHeadReuseView">
+            <rect key="frame" x="0.0" y="0.0" width="285" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1u6-pL-rhX">
+                    <rect key="frame" x="15" y="9.5" width="80" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="mxT-gb-rX8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="最近在读">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="leadAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="nbA-cO-Op0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gET-6c-fCi">
+                    <rect key="frame" x="95" y="9.5" width="80" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="mTd-nJ-6up"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="读完3">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="centerAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="8FD-MT-tXq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxe-oS-NkE">
+                    <rect key="frame" x="175" y="9.5" width="80" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Ygx-NH-1su"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="共同阅读3">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="trailAction:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="G8l-F4-3yv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oxe-oS-NkE" firstAttribute="leading" secondItem="gET-6c-fCi" secondAttribute="trailing" id="EEf-DP-qBf"/>
+                <constraint firstItem="1u6-pL-rhX" firstAttribute="leading" secondItem="9Gg-ye-v9C" secondAttribute="leading" constant="15" id="LGf-fZ-48B"/>
+                <constraint firstItem="gET-6c-fCi" firstAttribute="centerY" secondItem="1u6-pL-rhX" secondAttribute="centerY" id="MHK-v9-wjb"/>
+                <constraint firstItem="1u6-pL-rhX" firstAttribute="centerY" secondItem="9Gg-ye-v9C" secondAttribute="centerY" id="R7e-81-p1C"/>
+                <constraint firstItem="gET-6c-fCi" firstAttribute="leading" secondItem="1u6-pL-rhX" secondAttribute="trailing" id="WTL-dn-OCC"/>
+                <constraint firstItem="oxe-oS-NkE" firstAttribute="centerY" secondItem="gET-6c-fCi" secondAttribute="centerY" id="dho-9m-9jB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="9Gg-ye-v9C"/>
+            <connections>
+                <outlet property="centerBtn" destination="gET-6c-fCi" id="ocb-7W-sBk"/>
+                <outlet property="leadBtn" destination="1u6-pL-rhX" id="rht-j0-YVb"/>
+                <outlet property="trailBtn" destination="oxe-oS-NkE" id="ayQ-Mn-4hz"/>
+            </connections>
+            <point key="canvasLocation" x="89" y="31"/>
+        </collectionReusableView>
+    </objects>
+</document>

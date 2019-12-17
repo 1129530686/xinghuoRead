@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="84" id="KGk-i7-Jjw" customClass="JUDIAN_READ_TaskCell">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="看广告领福利" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IC5-dA-vTL">
+                        <rect key="frame" x="65" y="35" width="74" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="看广告领福利" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwR-wE-5V8">
+                        <rect key="frame" x="65" y="12" width="86" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lb9-9x-F7c">
+                        <rect key="frame" x="193" y="5" width="134" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="去领取" backgroundImage="welfare_list_btn">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="trailAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="99j-mf-zCS"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welfare_list_watch" translatesAutoresizingMaskIntoConstraints="NO" id="hsK-xw-87f">
+                        <rect key="frame" x="15" y="12" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="SoT-Db-nQT"/>
+                            <constraint firstAttribute="height" constant="40" id="bWt-YS-XpQ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIk-ls-z8V">
+                        <rect key="frame" x="15" y="83.5" width="327" height="0.5"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="hLa-Mf-aHI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IC5-dA-vTL" firstAttribute="bottom" secondItem="hsK-xw-87f" secondAttribute="bottom" constant="-2" id="EkZ-LH-6vx"/>
+                    <constraint firstAttribute="bottom" secondItem="lIk-ls-z8V" secondAttribute="bottom" id="GYl-ki-5dK"/>
+                    <constraint firstItem="hsK-xw-87f" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="SX9-Rc-aGz"/>
+                    <constraint firstAttribute="trailing" secondItem="Lb9-9x-F7c" secondAttribute="trailing" constant="15" id="Xjf-zw-cTc"/>
+                    <constraint firstItem="qwR-wE-5V8" firstAttribute="top" secondItem="hsK-xw-87f" secondAttribute="top" id="aK4-R8-V6z"/>
+                    <constraint firstItem="qwR-wE-5V8" firstAttribute="leading" secondItem="hsK-xw-87f" secondAttribute="trailing" constant="10" id="eF6-eZ-vIL"/>
+                    <constraint firstItem="hsK-xw-87f" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="eUY-Ph-hQA"/>
+                    <constraint firstItem="IC5-dA-vTL" firstAttribute="leading" secondItem="hsK-xw-87f" secondAttribute="trailing" constant="10" id="gMa-S8-141"/>
+                    <constraint firstItem="Lb9-9x-F7c" firstAttribute="centerY" secondItem="hsK-xw-87f" secondAttribute="centerY" id="h3w-wn-NEQ"/>
+                    <constraint firstItem="lIk-ls-z8V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="lZF-Xa-joD"/>
+                    <constraint firstAttribute="trailing" secondItem="lIk-ls-z8V" secondAttribute="trailing" id="xW7-H9-P45"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="iconView" destination="hsK-xw-87f" id="QYp-Vf-XBW"/>
+                <outlet property="nameLab" destination="qwR-wE-5V8" id="I6e-tt-k8Z"/>
+                <outlet property="sepView" destination="lIk-ls-z8V" id="Xt3-Bs-Sex"/>
+                <outlet property="smallNameLab" destination="IC5-dA-vTL" id="qmZ-hX-c9i"/>
+                <outlet property="trailBtn" destination="Lb9-9x-F7c" id="BUJ-A5-oa4"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="132.23388305847078"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="welfare_list_btn" width="67" height="27"/>
+        <image name="welfare_list_watch" width="40" height="40"/>
+    </resources>
+</document>

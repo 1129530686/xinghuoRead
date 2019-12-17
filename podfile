@@ -1,0 +1,53 @@
+platform :ios, '8.0'
+inhibit_all_warnings!
+#use_frameworks!
+
+target :xinghuoRead do
+    
+    pod 'AFNetworking'
+    pod 'SDWebImage','~> 4.4.6'
+    #pod 'SDWebImage/WebP'
+    pod 'Masonry'
+    pod 'MJRefresh'
+    pod 'FMDB'
+    pod 'MBProgressHUD'
+    pod 'BlocksKit'
+    pod 'YYCategories'
+    pod 'YYModel'
+    #pod 'libwebp'
+#, :podspec => '/Users/panqiang/.cocoapods/repos/master/Specs/1/9/2/libwebp' 
+    pod 'SDCycleScrollView'
+    pod 'DZNEmptyDataSet'
+    pod 'SSZipArchive'
+    pod 'UMCCommon'
+    pod 'UMCSecurityPlugins'
+    pod 'UMCAnalytics'
+#    pod 'UMCPush'
+    pod 'UMCShare/UI'
+    pod 'UMCShare/Social/WeChat'
+    pod 'UMCShare/Social/Sina'
+    pod 'UMCShare/Social/QQ'
+
+    #pod 'IQKeyboardManager'
+    pod 'Bugly'
+    pod 'GTSDK'
+    pod 'GCSDK'
+    #pod 'UMengAnalytics', '~> 4.2.4'
+    #pod 'CocoaLumberjack', '~> 3.3.0'
+    #pod 'MWPhotoBrowser', '~> 2.1.2'
+    #pod 'WCDB', '~> 1.0.6'
+    #pod 'YYText', '~> 1.0.7'
+
+      
+
+end
+
+#
+#flutter_application_path = '../reader'
+#eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+
+#添加如下两行代码，路径修改为我们的fluter module的路径
+#flutter_application_path = './reader'
+#eval(File.read(File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')), binding)
+
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="89" id="KGk-i7-Jjw" customClass="JUDIAN_READ_LoginCell">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqA-0g-1kE" customClass="JUDIAN_READER_PhoneCodeButton">
+                        <rect key="frame" x="311" y="55.5" width="93" height="33"/>
+                        <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="93" id="2eB-k2-ouB"/>
+                            <constraint firstAttribute="height" constant="33" id="dkq-sW-7R4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="获取验证码">
+                            <color key="titleColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="trailBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="TOO-9t-Sly"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LYl-UI-vK0">
+                        <rect key="frame" x="15" y="57.5" width="281" height="21"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIb-oV-OVK">
+                        <rect key="frame" x="15" y="88.5" width="389" height="0.5"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490199999995" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="hQJ-fL-g9h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xIb-oV-OVK" firstAttribute="top" secondItem="gqA-0g-1kE" secondAttribute="bottom" id="Jaz-Tz-2WW"/>
+                    <constraint firstAttribute="trailing" secondItem="xIb-oV-OVK" secondAttribute="trailing" constant="15" id="ULF-w2-vuO"/>
+                    <constraint firstItem="gqA-0g-1kE" firstAttribute="leading" secondItem="LYl-UI-vK0" secondAttribute="trailing" constant="15" id="dGh-MT-Z3Q"/>
+                    <constraint firstItem="xIb-oV-OVK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="liX-8T-c0F"/>
+                    <constraint firstAttribute="trailing" secondItem="gqA-0g-1kE" secondAttribute="trailing" constant="15" id="lth-Bv-G7B"/>
+                    <constraint firstItem="LYl-UI-vK0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sXX-3T-jRc"/>
+                    <constraint firstAttribute="bottom" secondItem="xIb-oV-OVK" secondAttribute="bottom" id="wCj-nN-Zbc"/>
+                    <constraint firstItem="xIb-oV-OVK" firstAttribute="top" secondItem="LYl-UI-vK0" secondAttribute="bottom" constant="10" id="zqi-Hc-a2a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="inputTF" destination="LYl-UI-vK0" id="4nA-Kk-H9d"/>
+                <outlet property="trailBtn" destination="gqA-0g-1kE" id="2U5-wv-aNZ"/>
+                <outlet property="trailBtnSpace" destination="lth-Bv-G7B" id="tHe-rs-gBa"/>
+                <outlet property="trailBtnWidth" destination="2eB-k2-ouB" id="6hJ-gL-zEG"/>
+                <outlet property="trailConstant" destination="ULF-w2-vuO" id="IK1-dm-94E"/>
+            </connections>
+            <point key="canvasLocation" x="156" y="149.77511244377811"/>
+        </tableViewCell>
+    </objects>
+</document>
